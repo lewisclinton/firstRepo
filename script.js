@@ -1,4 +1,4 @@
-//Use an array to hold the value of the quotes
+//Use of array to store author, quote and year
 const arrayOfQuotes = [
     {'author': 'Nelson Mandela', 
      'quote': 'It always seems impossible until it is done',
@@ -40,7 +40,6 @@ const arrayOfQuotes = [
 ];
 
 function generateQuote(){
-    // const randomIndex = Number.parseInt(Math.random()*arrayOfQuotes.length + 1);
     const randomIndex = Math.floor(Math.random() * arrayOfQuotes.length);
     document.querySelector('#quoteOutput').textContent = `\"${arrayOfQuotes[randomIndex].quote}\"`;
     document.querySelector('#authorOutput').textContent = `-${arrayOfQuotes[randomIndex].author}`;
